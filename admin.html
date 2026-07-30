@@ -100,11 +100,10 @@ img { max-width:100%; display:block; }
 
 /* THEME TOGGLE */
 .theme-btn {
-  width:38px; height:38px; border-radius:50%;
+  width:38px; height:38px; border-radius:var(--r-sm);
+  border:1px solid var(--border); background:var(--bg-card);
   display:flex; align-items:center; justify-content:center;
-  background: var(--surface); border:1px solid var(--border);
-  color: var(--text-secondary);
-  transition: all .25s;
+  transition:all .25s;
 }
 .theme-btn:hover { border-color:var(--accent); }
 .theme-btn svg { width:18px; height:18px; stroke:var(--text-secondary); fill:none; stroke-width:2; }
