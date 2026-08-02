@@ -223,6 +223,12 @@ html[data-theme="light"] .page-ink { opacity:.7; }
   content:'▾'; position:absolute; left:12px; top:50%; transform:translateY(-50%);
   color:var(--text-muted); font-size:.65rem; pointer-events:none;
 }
+.dz-flag {
+  width:34px; height:23px; border-radius:3px; overflow:hidden;
+  box-shadow:0 0 0 1px rgba(255,255,255,.12), 0 2px 6px rgba(0,0,0,.35);
+  flex-shrink:0;
+}
+.dz-flag svg { width:100%; height:100%; display:block; }
 .theme-btn {
   width:38px; height:38px; border-radius:50%;
   display:flex; align-items:center; justify-content:center;
@@ -1196,6 +1202,9 @@ html[data-theme="light"] .page-ink { opacity:.7; }
   <div class="topbar-logo" style="cursor:pointer" onclick="location.reload()">
     <div class="logo-icon">M</div>
     <span id="logoText">ميمو منصتي</span>
+    <div class="dz-flag" title="الجزائر — Algérie">
+      <svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600"><path fill="#fff" d="M0 0h900v600H0z"/><path fill="#063" d="M0 0h450v600H0z"/><path fill="#d21034" d="M579.903811 225a150 150 0 1 0 0 150 120 120 0 1 1 0-150M585.676275 300 450 255.916106 533.852549 371.329239v-142.658277L450 344.083894z"/></svg>
+    </div>
   </div>
   <nav class="topbar-nav" id="topbarNav">
     <button class="active" data-page="home" data-i18n="tab_home">الرئيسية</button>
